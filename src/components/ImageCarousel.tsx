@@ -10,6 +10,8 @@ import CarouselImage4 from "../../public/carousel_image_4.png";
 import CarouselImage5 from "../../public/carousel_image_5.png";
 import CarouselImage6 from "../../public/carousel_image_6.png";
 import CarouselImage7 from "../../public/carousel_image_7.png"; // Fixed the image path
+import CarouselImage8 from "../../public/carousel_image_8.jpg"; 
+import CarouselImage9 from "../../public/carousel_image_9.jpg"; // Added a new image
 
 const images = [
     CarouselImage1,
@@ -19,6 +21,8 @@ const images = [
     CarouselImage5,
     CarouselImage6,
     CarouselImage7,
+    CarouselImage8,
+    CarouselImage9
 ];
 
 const responsive = {
@@ -46,14 +50,15 @@ const ImageCarousel = () => {
             <Carousel responsive={responsive} centerMode={true} ssr={true} swipeable={true} draggable={false}>
                 {images.map((src, index) => (
                     <div key={index} className="flex justify-center mx-2"> {/* Add margin for spacing */}
-                        <div className="max-w-xs mx-auto"> {/* Set max width for inner div */}
-                            <Image 
+                        <div className="max-w-xs mx-auto "> {/* Set max width for inner div */}
+                        <Image 
                                 src={src} 
                                 alt={`Carousel Image ${index + 1}`} 
-                                layout="intrinsic" 
-                                width={300} // Adjust width for smaller size
-                                height={200} // Adjust height for smaller size
-                                className="rounded-lg" // Add any additional styling you want
+                                layout={index > 6 ? 'fill' : 'intrinsic'} 
+                                objectFit={index > 6 ? 'cover' : 'contain'} 
+                                width={index > 6 ? undefined : 300} 
+                                height={index > 6 ? undefined : 151} 
+                                className={`${index > 6 ? '[border-radius:24px] border-4 border-primary-light' : ''}`} 
                             />
                         </div>
                     </div>

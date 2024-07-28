@@ -29,11 +29,11 @@ const Home: React.FC = () => {
           <Image src={CursorIcon} alt="Cursor Icon" className="absolute top-7 right-20" width={100} height={50} />
         </div>
 
-        <h2 className="text-2xl max-w-lg text-wrap text-gray-600 text-center mx-auto z-10">The Official Student Chapter of ACM @ Texas A&M University</h2>
+        <h2 className="text-2xl max-w-lg text-wrap text-gray-600 text-center mx-auto z-10">Official ACM Chapter @ Texas A&M University</h2>
 
         <div className="flex justify-center gap-x-4 mt-6">
           <Link href="/events" className="bg-white border-2 border-b-4 border-r-4 border-primary text-primary px-4 py-2 rounded-full text-sm font-medium hover:bg-primary-light hover:text-white">Upcoming Events</Link>
-          <a href="/contact" className="bg-primary-light border-2 border-b-4 border-r-4 border-primary text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-white hover:text-primary">Get in touch!</a>
+          <a href="mailto:tacs-officers@lists.tamu.edu" className="bg-primary-light border-2 border-b-4 border-r-4 border-primary text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-white hover:text-primary">Get in touch!</a>
         </div>
       </div>
 

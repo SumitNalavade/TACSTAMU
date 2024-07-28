@@ -118,7 +118,7 @@ const AboutPage: React.FC = () => {
                         <div className="flex space-x-4">
                             <a href="https://www.linkedin.com/company/tamucs/" target="_blank" className="bg-primary-light border-2 border-b-4 border-r-4 border-primary text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-white hover:text-primary">More about us on LinkedIn</a>
 
-                            <Link href="/contact" className="bg-white border-2 border-b-4 border-r-4 border-primary text-primary px-4 py-2 rounded-full text-sm font-medium hover:bg-primary-light hover:text-white">Shoot us an email</Link>
+                            <Link href="mailto:tacs-officers@lists.tamu.edu" className="bg-white border-2 border-b-4 border-r-4 border-primary text-primary px-4 py-2 rounded-full text-sm font-medium hover:bg-primary-light hover:text-white">Shoot us an email</Link>
                         </div>
                     </div>
                     <div className="flex-1 flex justify-center">
