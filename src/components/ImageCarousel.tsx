@@ -49,16 +49,14 @@ const ImageCarousel = () => {
         <div className="w-full overflow-hidden">
             <Carousel responsive={responsive} centerMode={true} ssr={true} swipeable={true} draggable={false}>
                 {images.map((src, index) => (
-                    <div key={index} className="flex justify-center mx-2"> {/* Add margin for spacing */}
-                        <div className="max-w-xs mx-auto "> {/* Set max width for inner div */}
-                        <Image 
+                    <div key={index} className="flex justify-center mx-2">
+                        <div className="relative w-full h-60 max-w-xs mx-auto">
+                            <Image 
                                 src={src} 
                                 alt={`Carousel Image ${index + 1}`} 
-                                layout={index > 6 ? 'fill' : 'intrinsic'} 
-                                objectFit={index > 6 ? 'cover' : 'contain'} 
-                                width={index > 6 ? undefined : 300} 
-                                height={index > 6 ? undefined : 151} 
-                                className={`${index > 6 ? '[border-radius:24px] border-4 border-primary-light' : ''}`} 
+                                layout="fill" 
+                                objectFit="fill" 
+                                className={`${index > 6 ? 'rounded-[24px] border-4 border-[#4165E7]' : ''}`} 
                             />
                         </div>
                     </div>
