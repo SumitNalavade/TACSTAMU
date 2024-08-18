@@ -18,6 +18,7 @@ import keshari_rijal_headshot from "../../public/keshari_rijal_headshot.png";
 import sid_das_headshot from "../../public/sid_das_headshot.png";
 import aarya_patel_headshot from "../../public/aarya_patel_headshot.png";
 import sanjana_pasumarthi_headshot from "../../public/sanjana_pasumarthi_headshot.png";
+import aashka_dasgupta_headshot from "../../public/aashka_dasgupta_headshot.jpg"
 
 const Officers = [
     {
@@ -87,7 +88,8 @@ const Officers = [
         name: "Aashka Dasgupta",
         title: "Outreach + Logistics Officer",
         linkedinLink: "https://www.linkedin.com/in/aashkadasgupta/",
-        email: "aashka.dasgupta@tamu.edu"
+        email: "aashka.dasgupta@tamu.edu",
+        photo: aashka_dasgupta_headshot
     },
     {
         name: "Sanjana Pasumarthi",

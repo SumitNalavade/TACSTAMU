@@ -18,7 +18,7 @@ const JoinPage: React.FC = () => {
                         <h2 className="text-4xl font-bold">How To Join</h2>
 
                         <p className="text-gray-500">
-                            Texas A&M Computing Society does not have any membership fees or applications! All we ask is that members join our Discord and follow our socials to stay updated on our events.
+                            Texas A&M Computing Society does not have any membership fees or applications! All we ask is that members join our Discord and follow our socials to stay updated on our events. We have meetings on Wednesdays in the Peterson Building (Room 118) from 7 pm to 8 pm!
                         </p>
 
                         <p className="text-gray-500">
