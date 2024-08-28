@@ -15,7 +15,7 @@ interface Props {
 
 const OfficerCard: React.FC<Props> = ({ officer }) => {
     return (
-        <div className="border-2 border-primary-light border-r-4 border-b-4 rounded-2xl py-6 px-4 w-64 text-center space-y-4 bg-white">
+        <div className="border-2 border-primary-light border-r-4 border-b-4 rounded-2xl py-6 px-4 w-96 text-center space-y-4 bg-white">
             <div className="relative w-36 h-36 mx-auto mb-4">
                 <Image
                     src={officer.photo}

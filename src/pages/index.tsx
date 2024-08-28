@@ -13,77 +13,78 @@ import Footer from "@/components/Footer";
 
 const Home: React.FC = () => {
   return (
-    <>
+    <div className="flex flex-col min-h-screen">
       <Navbar />
 
-      <div className="container max-w-6xl mx-auto text-center py-12 z-10">
-        <div className="text-6xl font-bold text-primary">
-          <h1 className="mb-4">Texas A&M</h1>
-          <h1 className="mb-4">Computing Society</h1>
-        </div>
-
-        <div className="relative">
-          <Image src={StarIcon} alt="Star Icon" className="absolute left-10" width={60} height={50} />
-          <Image src={StarIcon} alt="Star Icon" className="absolute bottom-10 right-10" width={60} height={50} />
-          <Image src={StarIcon} alt="Star Icon" className="absolute bottom-0 left-20" width={60} height={50} />
-          <Image src={CursorIcon} alt="Cursor Icon" className="absolute top-7 right-20" width={100} height={50} />
-        </div>
-
-        <h2 className="text-2xl max-w-lg text-wrap text-gray-600 text-center mx-auto z-10">Official ACM Chapter @ Texas A&M University</h2>
-        <br></br>
-        <h2 className="text-2xl max-w-lg text-wrap text-gray-600 text-center mx-auto z-10"><strong>Meetings Held Every Wednesday from <br></br>7 pm - 8 pm in PETR 118 (next to Evans)</strong></h2>
-
-        <div className="flex justify-center gap-x-4 mt-6">
-          <Link href="/events" className="bg-white border-2 border-b-4 border-r-4 border-primary text-primary px-4 py-2 rounded-full text-sm font-medium hover:bg-primary-light hover:text-white">Upcoming Events</Link>
-          <a href="mailto:tacs-officers@lists.tamu.edu" className="bg-primary-light border-2 border-b-4 border-r-4 border-primary text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-white hover:text-primary">Get in touch!</a>
-        </div>
-      </div>
-
-      <div className="container mx-auto mt-8">
-        <ImageCarousel />
-      </div>
-
-      <div className="container mx-auto mt-8">
-        <SponsorCarousel />
-      </div>
-
-      <div className="flex justify-center mt-12">
-        <h2 className="text-4xl font-bold">What We Do</h2>
-      </div>
-
-      <div className="mt-12 flex justify-center gap-x-12 px-4">
-        <div className="border-2 border-primary-light border-r-4 border-b-4 rounded-2xl p-10 w-64 text-center">
-          <div className="relative w-28 h-28 mx-auto mb-4">
-            <Image src={MicrophoneIcon} alt={`Microphone icon`} layout="fill" objectFit="contain" />
+      <main className="flex-grow">
+        <div className="container mx-auto px-4 py-8 text-center">
+          <div className="text-4xl sm:text-6xl font-bold text-primary mb-4">
+            <h1 className="mb-2">Texas A&M</h1>
+            <h1>Computing Society</h1>
           </div>
-          <h2 className="text-primary font-bold text-xl mb-2">Tech Talks</h2>
-          <p className="text-gray-600 text-sm">See industry speakers talk about what’s cool in the CS world.</p>
-        </div>
 
-        <div className="border-2 border-primary-light border-r-4 border-b-4 rounded-2xl p-10 w-64 text-center">
-          <div className="relative w-28 h-28 mx-auto mb-4">
-            <Image src={SocialIcon} alt={`Person icon`} layout="fill" objectFit="contain" />
+          <div className="relative hidden sm:block">
+            <Image src={StarIcon} alt="Star Icon" className="absolute left-10" width={60} height={50} />
+            <Image src={StarIcon} alt="Star Icon" className="absolute bottom-10 right-10" width={60} height={50} />
+            <Image src={StarIcon} alt="Star Icon" className="absolute bottom-0 left-20" width={60} height={50} />
+            <Image src={CursorIcon} alt="Cursor Icon" className="absolute top-7 right-20" width={100} height={50} />
           </div>
-          <h2 className="text-primary font-bold text-xl mb-2">Socials</h2>
-          <p className="text-gray-600 text-sm">Get to know your peers and connect with like-minded people while having fun!</p>
-        </div>
 
-        <div className="border-2 border-primary-light border-r-4 border-b-4 rounded-2xl p-10 w-64 text-center">
-          <div className="relative w-28 h-28 mx-auto mb-4">
-            <Image src={WorkshopsIcon} alt={`Book icon`} layout="fill" objectFit="contain" />
+          <h2 className="text-xl sm:text-2xl max-w-lg mx-auto text-gray-600 mb-6">Official ACM Chapter @ Texas A&M University</h2>
+
+          <div className="flex flex-col sm:flex-row justify-center gap-4 mb-8">
+            <Link href="/events" className="bg-white border-2 border-b-4 border-r-4 border-primary text-primary px-4 py-2 rounded-full text-sm font-medium hover:bg-primary-light hover:text-white">
+              Upcoming Events
+            </Link>
+            <a href="mailto:tacs-officers@lists.tamu.edu" className="bg-primary-light border-2 border-b-4 border-r-4 border-primary text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-white hover:text-primary">
+              Get in touch!
+            </a>
           </div>
-          <h2 className="text-primary font-bold text-xl mb-2">Workshops</h2>
-          <p className="text-gray-600 text-sm">Learn industry-relevant skills from experienced students and company speakers.</p>
         </div>
-      </div>
 
-      <div className="flex justify-center mt-8 mb-14">
-        <Link href="/events" className="bg-primary-light border-2 border-b-4 border-r-4 border-primary text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-white hover:text-primary">See our past events</Link>
-      </div>
+        <div className="container mx-auto px-4 mb-8">
+          <ImageCarousel />
+        </div>
+
+        <div className="container mx-auto px-4 mb-8">
+          <SponsorCarousel />
+        </div>
+
+        <div className="container mx-auto px-4 mb-8">
+          <h2 className="text-3xl sm:text-4xl font-bold text-center mb-8">What We Do</h2>
+
+          <div className="sm:grid sm:grid-cols-2 gap-8 space-y-8 md:space-y-0 md:flex  justify-center">
+            {[
+              { icon: MicrophoneIcon, title: "Tech Talks", description: "See industry speakers talk about what's cool in the CS world." },
+              { icon: SocialIcon, title: "Socials", description: "Get to know your peers and connect with like-minded people while having fun!" },
+              { icon: WorkshopsIcon, title: "Workshops", description: "Learn industry-relevant skills from experienced students and company speakers." },
+            ].map((item, index) => (
+              <div
+                key={index}
+                className="w-full sm:w-64 h-full border-2 border-primary-light border-r-4 border-b-4 rounded-2xl p-6 text-center flex flex-col justify-between"
+              >
+                <div>
+                  <div className="relative w-20 h-20 mx-auto mb-4">
+                    <Image src={item.icon} alt={`${item.title} icon`} layout="fill" objectFit="contain" />
+                  </div>
+                  <h3 className="text-primary font-bold text-xl mb-2">{item.title}</h3>
+                </div>
+                <p className="text-gray-600 text-sm">{item.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div className="text-center mb-8">
+          <Link href="/events" className="bg-primary-light border-2 border-b-4 border-r-4 border-primary text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-white hover:text-primary">
+            See our past events
+          </Link>
+        </div>
+      </main>
 
       <Footer />
-    </>
-  )
-}
+    </div>
+  );
+};
 
 export default Home;
