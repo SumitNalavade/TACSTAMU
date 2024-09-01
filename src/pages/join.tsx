@@ -30,7 +30,7 @@ const JoinPage: React.FC = () => {
                                 <span>Join the Discord</span>
                             </a>
                             <a
-                                href="https://www.linkedin.com/company/tamucomputingsociety/"
+                                href="https://www.linkedin.com/company/tamucs/"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="flex items-center justify-center w-10 h-10 bg-primary-light border-2 border-b-4 border-r-4 border-primary text-white rounded-full hover:bg-white hover:text-primary"
@@ -38,7 +38,7 @@ const JoinPage: React.FC = () => {
                                 <FaLinkedin />
                             </a>
                             <a
-                                href="https://www.instagram.com/tamucompsci/"
+                                href="https://www.instagram.com/tacstamu/"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="flex items-center justify-center w-10 h-10 bg-primary-light border-2 border-b-4 border-r-4 border-primary text-white rounded-full hover:bg-white hover:text-primary"
