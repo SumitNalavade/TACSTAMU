@@ -57,13 +57,6 @@ const Officers = [
         photo: montgomery_bohde_headshot,
     },
     {
-        name: "Sumit Nalavade",
-        title: "Tech Officer",
-        linkedinLink: "https://www.linkedin.com/in/sumit-nalavade/",
-        email: "sumit.nalavade@tamu.edu",
-        photo: sumit_nalavade_headshot,
-    },
-    {
         name: "Keshari Rijal",
         title: "Marketing Officer",
         linkedinLink: "https://www.linkedin.com/in/keshari-rijal/",
@@ -71,11 +64,11 @@ const Officers = [
         photo: keshari_rijal_headshot,
     },
     {
-        name: "Sid Das",
-        title: "Outreach + Logistics Officer",
-        linkedinLink: "https://www.linkedin.com/in/siddharthadas5",
-        email: "sdas05@tamu.edu",
-        photo: sid_das_headshot,
+        name: "Sumit Nalavade",
+        title: "Tech Officer",
+        linkedinLink: "https://www.linkedin.com/in/sumit-nalavade/",
+        email: "sumit.nalavade@tamu.edu",
+        photo: sumit_nalavade_headshot,
     },
     {
         name: "Aarya Patel",
@@ -83,19 +76,6 @@ const Officers = [
         linkedinLink: "https://www.linkedin.com/in/aaryaapatel/",
         email: "aarya.patel@tamu.edu",
         photo: aarya_patel_headshot,
-    },
-    {
-        name: "Aashka Dasgupta",
-        title: "Outreach + Logistics Officer",
-        linkedinLink: "https://www.linkedin.com/in/aashkadasgupta/",
-        email: "aashka.dasgupta@tamu.edu",
-        photo: aashka_dasgupta_headshot
-    },
-    {
-        name: "Sanjana Pasumarthi",
-        title: "Outreach + Logistics Officer",
-        email: "sanjana204@tamu.edu",
-        photo: sanjana_pasumarthi_headshot,
     },
 ];
 
