@@ -6,7 +6,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import OfficerCard from "@/components/OfficerCard";
 
-import WhatWeDoPageImage from "../../public/what_we_do_page_image.png";
+import WhatWeDoPageImage from "../../public/what_we_do_page_image.webp";
 
 import ayush_garg_headshot from "../../public/ayush_garg_headshot.png";
 import akshay_belhe_headshot from "../../public/akshay_belhe_headshot.png";
@@ -15,10 +15,7 @@ import aditya_nambi_headshot from "../../public/adi_nambi_headshot.png";
 import montgomery_bohde_headshot from "../../public/montgomery_bohde_headshot.png";
 import sumit_nalavade_headshot from "../../public/sumit_nalavade_headshot.png";
 import keshari_rijal_headshot from "../../public/keshari_rijal_headshot.png";
-import sid_das_headshot from "../../public/sid_das_headshot.png";
 import aarya_patel_headshot from "../../public/aarya_patel_headshot.png";
-import sanjana_pasumarthi_headshot from "../../public/sanjana_pasumarthi_headshot.png";
-import aashka_dasgupta_headshot from "../../public/aashka_dasgupta_headshot.jpg"
 
 const Officers = [
     {
