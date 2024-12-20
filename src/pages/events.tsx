@@ -14,6 +14,7 @@ import paycomTechnicalInterviewPhoto from "../../public/paycom_technical_intervi
 import monte_database_workshop_photo from "../../public/monte_database_workshop_photo.webp";
 import halloween_social_photo from "../../public/halloween_social_photo.webp";
 import engr_102_final_review_photo from "../../public/engr_102_final_review_photo.webp";
+import hilcorp_photo from "../../public/hilcorp_photo.webp";
 
 const events = [
   {
@@ -71,10 +72,9 @@ const events = [
   },
   {
     title: "Hilcorp Information Session & Tech Talk",
-    description:
-      "“Learn how to make the most out of your career fair experience with Paycom Talent Acquisition!”",
-    link: "https://www.instagram.com/p/CwywGK1OUqq/",
-    photo: paycomTechnicalInterviewPhoto,
+    description:"“Stop by for an IT information session and tech talk hosted by Hilcorp. This is an amazing opportunity to network and possibly get a tech internship!”",
+    link: "https://www.instagram.com/p/DAmC4uMyWxT/",
+    photo: hilcorp_photo,
   },
 ];
 
