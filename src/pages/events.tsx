@@ -5,12 +5,15 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import EventCard from "@/components/EventCard";
 
-import eventsPageImage from "../../public/events_page_image.png";
+import eventsPageImage from "../../public/events_page_image.webp";
 import build4GoodHackathonPhoto from "../../public/build_4_good_hackathon_photo.webp";
 import easterEggHuntPhoto from "../../public/easter_egg_hunt_social_image.webp";
 import capitalOneSpeakersPhoto from "../../public/capital_one_speakers.webp";
 import notionEventPhoto from "../../public/notion_event_image.webp";
 import paycomTechnicalInterviewPhoto from "../../public/paycom_technical_interview_photo.webp";
+import monte_database_workshop_photo from "../../public/monte_database_workshop_photo.webp";
+import halloween_social_photo from "../../public/halloween_social_photo.webp";
+import engr_102_final_review_photo from "../../public/engr_102_final_review_photo.webp";
 
 const events = [
   {
@@ -28,6 +31,18 @@ const events = [
     photo: easterEggHuntPhoto,
   },
   {
+    title: "Database Workshop With Monte",
+    description: "“Learn about the different hosted database providers, how to make SQL and NoSQL queries and different tradeoffs in this interactive workshop.”",
+    link: "https://www.instagram.com/p/DACFneay98S/",
+    photo: monte_database_workshop_photo
+  },
+  {
+    title: "Halloween Social with Team Building Games",
+    description: "“Join us for a Halloween social with free food and team related games.”",
+    link: "https://www.instagram.com/p/DBtoATqx4jw/",
+    photo: halloween_social_photo
+  },
+  {
     title: "CapitalOne Industry Speakers",
     description:
       "“Perfect your elevator pitch and interview skills with direction from Capital One software engineers who are Texas A&M alumni! Free pizza and club shirts!”",
@@ -42,7 +57,20 @@ const events = [
     photo: notionEventPhoto,
   },
   {
+    title: "ENGR 102 Final Review",
+    description: "“Join us for a comprehensive review session for the ENGR 102 final exam. We will be covering a lot of tricks and tips that tend to get people, as well as covering general material taht can be hard to grasp.”",
+    link: "https://www.instagram.com/p/DCUXs_QRX4m/",
+    photo: engr_102_final_review_photo
+  },
+  {
     title: "Technical Interview Workshop With Paycom",
+    description:
+      "“Learn how to make the most out of your career fair experience with Paycom Talent Acquisition!”",
+    link: "https://www.instagram.com/p/CwywGK1OUqq/",
+    photo: paycomTechnicalInterviewPhoto,
+  },
+  {
+    title: "Hilcorp Information Session & Tech Talk",
     description:
       "“Learn how to make the most out of your career fair experience with Paycom Talent Acquisition!”",
     link: "https://www.instagram.com/p/CwywGK1OUqq/",
