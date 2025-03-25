@@ -59,7 +59,7 @@ const events = [
   },
   {
     title: "ENGR 102 Final Review",
-    description: "“Join us for a comprehensive review session for the ENGR 102 final exam. We will be covering a lot of tricks and tips that tend to get people, as well as covering general material taht can be hard to grasp.”",
+    description: "“Join us for a comprehensive review session for the ENGR 102 final exam. We will be covering a lot of tricks and tips that tend to get people, as well as covering general material that can be hard to grasp.”",
     link: "https://www.instagram.com/p/DCUXs_QRX4m/",
     photo: engr_102_final_review_photo
   },
