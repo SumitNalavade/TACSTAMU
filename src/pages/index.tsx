@@ -33,8 +33,8 @@ const Home: React.FC = () => {
           <h2 className="text-xl sm:text-2xl max-w-lg mx-auto text-gray-600 mb-6">Official ACM Chapter @ Texas A&M University</h2>
 
           <div className="flex flex-col sm:flex-row justify-center gap-4 mb-8">
-            <Link href="/events" className="bg-white border-2 border-b-4 border-r-4 border-primary text-primary px-4 py-2 rounded-full text-sm font-medium hover:bg-primary-light hover:text-white">
-              Upcoming Events
+            <Link href="/b4g" className="bg-white border-2 border-b-4 border-r-4 border-primary text-primary px-4 py-2 rounded-full text-sm font-medium hover:bg-primary-light hover:text-white">
+              Build 4 Good 2025
             </Link>
             <a href="mailto:tacs-officers@lists.tamu.edu" className="bg-primary-light border-2 border-b-4 border-r-4 border-primary text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-white hover:text-primary">
               Get in touch!

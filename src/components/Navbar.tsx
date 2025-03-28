@@ -42,9 +42,10 @@ const Navbar:React.FC<Props> = ({ selectedPage }) => {
             {isMenuOpen && (
                 <div className="md:hidden">
                     <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                        <a href="/join" className="block text-gray-500 hover:text-gray-700 px-3 py-2 text-sm font-medium">Join</a>
-                        <a href="/about" className="block text-gray-500 hover:text-gray-700 px-3 py-2 text-sm font-medium">About</a>
-                        <a href="/events" className="block text-gray-500 hover:text-gray-700 px-3 py-2 text-sm font-medium">Events</a>
+                        <Link href="/join" className={`block text-gray-500 hover:text-gray-700 px-3 py-2 text-sm font-medium ${selectedPage === "Join" || selectedPage === "join" ? 'text-primary font-bold font-xl' : ''}`}>Join</Link>
+                        <Link href="/about" className={`block text-gray-500 hover:text-gray-700 px-3 py-2 text-sm font-medium ${selectedPage === "About" || selectedPage === "about" ? 'text-primary font-bold font-xl' : ''}`}>About</Link>
+                        <Link href="/events" className={`block text-gray-500 hover:text-gray-700 px-3 py-2 text-sm font-medium ${selectedPage === "Events" || selectedPage === "events" ? 'text-primary font-bold font-xl' : ''}`}>Events</Link>
+                        <Link href="/b4g" className={`block text-gray-500 hover:text-gray-700 px-3 py-2 text-sm font-medium ${selectedPage === "B4G" || selectedPage === "b4g" ? 'text-primary font-bold font-xl' : ''}`}>Build 4 Good</Link>
                         <a href="https://discord.gg/CBWn8mKFvx" target="_blank" className="block bg-primary-light border-2 border-primary    text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-blue-600 mt-2">Join our Discord</a>
                         <a href="mailto:tacs-officers@lists.tamu.edu" target="_blank"  className="block bg-purple-500 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-purple-600 mt-2">Contact</a>
                     </div>
