@@ -212,6 +212,7 @@ const B4G: React.FC = () => {
                             src={Challenges_Header}
                             width={400}
                             className="mx-auto"
+                            alt="Challenges Header"
                         />
                     </div>
 
