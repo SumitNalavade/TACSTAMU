@@ -100,7 +100,7 @@ const B4G: React.FC = () => {
                 >
                     {/* Header */}
                     <h2 className="text-center text-[#D6B6E2] font-black text-4xl uppercase tracking-wider mb-6">
-                        Event Schedule
+                        Tentative Event Schedule
                     </h2>
 
                     {/* Schedule items */}

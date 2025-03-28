@@ -23,7 +23,7 @@ const Navbar:React.FC<Props> = ({ selectedPage }) => {
                         <Link href="/join" className={`text-gray-500 hover:text-gray-700 px-3 py-2 text-sm font-medium ${selectedPage === "Join" || selectedPage === "join" ? 'text-primary border-b-2 border-primary font-bold font-xl' : ''}`}>Join</Link>
                         <Link href="/about" className={`text-gray-500 hover:text-gray-700 px-3 py-2 text-sm font-medium ${selectedPage === "About" || selectedPage === "about" ? 'text-primary border-b-2 border-primary font-bold font-xl' : ''}`}>About</Link>
                         <Link href="/events" className={`text-gray-500 hover:text-gray-700 px-3 py-2 text-sm font-medium ${selectedPage === "Events" || selectedPage === "events" ? 'text-primary border-b-2 border-primary font-bold font-xl' : ''}`}>Events</Link>
-                        <Link href="/b4g" className={`text-gray-500 hover:text-gray-700 px-3 py-2 text-sm font-medium ${selectedPage === "b4g" || selectedPage === "b4g" ? 'text-primary border-b-2 border-primary font-bold font-xl' : ''}`}>Build 4 Good</Link>
+                        <Link href="/b4g" className={`text-gray-500 hover:text-gray-700 px-3 py-2 text-sm font-medium ${selectedPage === "b4g" || selectedPage === "b4g" ? 'text-primary border-b-2 border-primary font-bold font-xl' : ''}`}>Build4Good</Link>
                         <a href="https://discord.gg/CBWn8mKFvx" target='_blank' className="flex items-center gap-x-2 bg-white border-2 border-b-4 border-r-4 border-primary text-primary px-4 py-2 rounded-full text-sm font-medium hover:bg-primary-light hover:text-white">
                             <FaDiscord className='text-xl mt-0.5' />
                             <p>Join our Discord</p>
@@ -45,7 +45,7 @@ const Navbar:React.FC<Props> = ({ selectedPage }) => {
                         <Link href="/join" className={`block text-gray-500 hover:text-gray-700 px-3 py-2 text-sm font-medium ${selectedPage === "Join" || selectedPage === "join" ? 'text-primary font-bold font-xl' : ''}`}>Join</Link>
                         <Link href="/about" className={`block text-gray-500 hover:text-gray-700 px-3 py-2 text-sm font-medium ${selectedPage === "About" || selectedPage === "about" ? 'text-primary font-bold font-xl' : ''}`}>About</Link>
                         <Link href="/events" className={`block text-gray-500 hover:text-gray-700 px-3 py-2 text-sm font-medium ${selectedPage === "Events" || selectedPage === "events" ? 'text-primary font-bold font-xl' : ''}`}>Events</Link>
-                        <Link href="/b4g" className={`block text-gray-500 hover:text-gray-700 px-3 py-2 text-sm font-medium ${selectedPage === "B4G" || selectedPage === "b4g" ? 'text-primary font-bold font-xl' : ''}`}>Build 4 Good</Link>
+                        <Link href="/b4g" className={`block text-gray-500 hover:text-gray-700 px-3 py-2 text-sm font-medium ${selectedPage === "B4G" || selectedPage === "b4g" ? 'text-primary font-bold font-xl' : ''}`}>Build4Good</Link>
                         <a href="https://discord.gg/CBWn8mKFvx" target="_blank" className="block bg-primary-light border-2 border-primary    text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-blue-600 mt-2">Join our Discord</a>
                         <a href="mailto:tacs-officers@lists.tamu.edu" target="_blank"  className="block bg-purple-500 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-purple-600 mt-2">Contact</a>
                     </div>
