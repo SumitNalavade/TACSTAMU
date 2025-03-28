@@ -5,8 +5,6 @@ import Challenges_Header from "../../public/challenges_header.png";
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 
-import { FaChevronCircleLeft, FaChevronCircleRight } from "react-icons/fa";
-
 import Footer from "@/components/Footer";
 
 const B4G: React.FC = () => {
@@ -192,6 +190,7 @@ const B4G: React.FC = () => {
                 <div className="mx-auto px-4 py-4 text-center">
                     <div className="mb-4">
                         <Image
+                            width={500}
                             src={B4G_Logo}
                             alt="Build For Good Logo"
                             className="mx-auto"
@@ -207,7 +206,7 @@ const B4G: React.FC = () => {
                 {/* Prize board with thicker borders */}
                 <div className="my-8 mt-20">
                     {/* Large heading with an outline (stroke) effect */}
-                    <div className="my-5">
+                    <div className="my-5 mx-4">
                         <Image
                             src={Challenges_Header}
                             width={400}
@@ -222,14 +221,6 @@ const B4G: React.FC = () => {
                         swipeable={true}
                         draggable={false}
                         className="w-full"
-                        customLeftArrow={<FaChevronCircleLeft
-                            size="lg"
-                            className="absolute top-1/2 left-4 max-w-12 cursor-pointer text-[#42A9D7] opacity-40"
-                        />}
-                        customRightArrow={<FaChevronCircleRight
-                            size="lg"
-                            className="absolute top-1/2 right-4 max-w-12 cursor-pointer text-[#42A9D7] opacity-40"
-                        />}
                     >
                         {awards.map((challenge, index) => (
                             <div key={index} className="flex justify-center px-2 my-4">
