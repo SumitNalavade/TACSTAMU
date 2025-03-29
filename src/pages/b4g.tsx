@@ -5,17 +5,16 @@ import Challenges_Header from "../../public/challenges_header.png";
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 
-import { FaChevronCircleLeft, FaChevronCircleRight } from "react-icons/fa";
-
 import Footer from "@/components/Footer";
 
 const B4G: React.FC = () => {
     // Example schedule data
     const saturdayEvents = [
         { time: "8:00 AM", name: "Doors Open" },
+        { time: "8:00-8:30 AM", name: "Breakfast" },
+
         { time: "8:30 AM", name: "Opening Ceremony Begins" },
         { time: "8:45 AM", name: "Team Matching + Hacking Begins!" },
-        { time: "9:00 AM", name: "Breakfast" },
         { time: "12:30 PM", name: "Lunch" },
         { time: "2:30 PM", name: "Devpost Opens" },
         { time: "3:30 PM", name: "Devpost Closes + Judging Begins" },
@@ -88,6 +87,7 @@ const B4G: React.FC = () => {
                 { place: '1st Place', prize: 'SIG Backpack and HRT Pokerset' },
                 { place: '2nd Place', prize: 'SIG Waterbottle and HRT T-Shirt' }
             ],
+            extra: "https://github.com/MontgomeryBohde/Build4Good-Pokerbots"
         }
     ];
 
@@ -96,6 +96,7 @@ const B4G: React.FC = () => {
     function TwoColumnSchedule() {
         return (
             <div className="w-full flex justify-center">
+                
                 <div
                     className="max-w-6xl w-full border-2 border-blue-200 rounded-3xl p-6 bg-white text-[#42A9D7]"
                     style={{ boxShadow: '2px 3px 5px rgba(66,169,215,0.8)' }}
@@ -197,7 +198,11 @@ const B4G: React.FC = () => {
                             className="mx-auto"
                         />
                     </div>
+                   
+                    <a href="https://b4ghelpq.vercel.app/" target="_blank" className="bg-[#42A9D7] text-white font-bold py-2 px-4 rounded-[20px] mb-4">B4G Help Queue</a>
+
                 </div>
+                
 
                 {/* Two-column schedule with thick border */}
                 <div className="p-4 ">
@@ -222,14 +227,7 @@ const B4G: React.FC = () => {
                         swipeable={true}
                         draggable={false}
                         className="w-full"
-                        customLeftArrow={<FaChevronCircleLeft
-                            size="lg"
-                            className="absolute top-1/2 left-4 max-w-12 cursor-pointer text-[#42A9D7] opacity-40"
-                        />}
-                        customRightArrow={<FaChevronCircleRight
-                            size="lg"
-                            className="absolute top-1/2 right-4 max-w-12 cursor-pointer text-[#42A9D7] opacity-40"
-                        />}
+                       
                     >
                         {awards.map((challenge, index) => (
                             <div key={index} className="flex justify-center px-2 my-4">
@@ -267,9 +265,17 @@ const B4G: React.FC = () => {
                                                     {prize.place}:
                                                 </span>
                                                 <span className="text-[#42A9D7]">{prize.prize}</span>
+
+                                                
                                             </div>
                                         ))}
                                     </div>
+
+                                   {challenge.extra &&  
+                                    <div className="flex items-center space-x-2">
+                                    <a href={challenge.extra} target="_blank" className="bg-[#42A9D7] text-white font-bold py-2 px-4 rounded-[20px] mt-[20px]">More Info (Github)</a>
+                                    </div>
+}
                                 </div>
                             </div>
                         ))}
