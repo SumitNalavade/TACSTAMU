@@ -66,7 +66,7 @@ const B4G: React.FC = () => {
         },
         {
             title: 'Best Beginner Hack',
-            subtitle: 'Best overall hack by first time hackers',
+            subtitle: 'Best overall hack by first time hackers. Challenge: Build a simple web app that solves a daily problem, saves time, keeps you organized, or raises awareness for a cause (e.g., to-do list, reminder, meal generator).',
             prizes: [
                 { place: '1st Place', prize: 'Sony Headphones' },
                 { place: '2nd Place', prize: 'Amazon Giftcard' },
