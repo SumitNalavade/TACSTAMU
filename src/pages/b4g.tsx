@@ -56,6 +56,15 @@ const B4G: React.FC = () => {
             ],
         },
         {
+            title: 'Poker Bot Challenge',
+            subtitle: 'Create an algorithm to play against other bots in a variant of poker.',
+            prizes: [
+                { place: '1st Place', prize: 'SIG Backpack and HRT Pokerset' },
+                { place: '2nd Place', prize: 'SIG Waterbottle and HRT T-Shirt' }
+            ],
+            extra: "https://github.com/MontgomeryBohde/Build4Good-Pokerbots"
+        },
+        {
             title: 'Best Beginner Hack',
             subtitle: 'Best overall hack by first time hackers',
             prizes: [
@@ -79,15 +88,6 @@ const B4G: React.FC = () => {
             prizes: [
                 { place: '1st Place', prize: 'Notion Goody Bag' }
             ],
-        },
-        {
-            title: 'Poker Bot Challenge',
-            subtitle: 'Create an algorithm to play against other bots in a variant of poker.',
-            prizes: [
-                { place: '1st Place', prize: 'SIG Backpack and HRT Pokerset' },
-                { place: '2nd Place', prize: 'SIG Waterbottle and HRT T-Shirt' }
-            ],
-            extra: "https://github.com/MontgomeryBohde/Build4Good-Pokerbots"
         }
     ];
 
